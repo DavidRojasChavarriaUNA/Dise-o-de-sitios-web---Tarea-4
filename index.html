@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarea 4 David Rojas Chavarria</title>
+  <meta name="author" content="David Rojas Chavarria" />
+  <meta name="description" content="Tarea 4 - Diseño de sitios web" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+<div class="container-lg border border-4">
+  <form>
+    <div>
+      <div class="row text-center border-bottom">
+        <div class="col-12 col-md-10 align-self-center order-md-first order-last">
+          <h1 cla>MUNICIPALIDAD DE DESAMPARADOS</h1>
+          <h3>DECLARACIÓN DEL IMPUESTO SOBRE BIENES INMUEBLES</h3>
+          <div class="row m-2 mt-0 mt-md-3 mt-lg-5 d-flex justify-content-center">
+            <label for="zonaHomogenea" class="col-12 col-sm-4 col-md-4 col-lg-3 col-form-label">ZONA HOMOGENEA</label>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-6">
+              <input type="text" class="form-control" id="zonaHomogenea">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-2 align-self-center order-first order-md-last">
+          <img class="img-fluid " src="img/escudo.png">
+        </div>
+      </div>
+      <div class="row p-2 align-self-center border-bottom">
+        <label class="col-12 col-sm-12 col-md-12 col-lg-6 col-form-label">El contribuyente solicitó asistencia del
+          funcionario Municipal para
+          completar la presente Declaración</label>
+        <div class="col-12 col-sm-2 col-md-2 col-lg-2 offset-md-1 offset-lg-0 align-self-center">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="ayuda" id="ayuda1" value="Si">
+            <label class="form-check-label" for="ayuda1">Si</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="ayuda" id="ayuda2" value="No">
+            <label class="form-check-label" for="ayuda2">No</label>
+          </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <input type="text" class="form-control" id="firma">
+            </div>
+            <label for="firma" class="col-12 text-center">FIRMA</label>
+          </div>
+        </div>
+      </div>
+      <div class="row border-bottom p-2">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="text-center">CUADRO I. IDENTIFICACIÓN DEL PROPIETARIO</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-5">
+              <label for="cedula1" class="form-label">1. N° DE CÉDULA (física o jurídica)</label>
+              <input type="text" class="form-control" id="cedula1">
+            </div>
+            <div class="col-12 col-md-6 col-lg-7">
+              <label for="nombrerazonsocial1" class="form-label">2. APELLIDOS Y NOMBRE O RAZÓN SOCIAL</label>
+              <input type="text" class="form-control" id="nombrerazonsocial1">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="domicio1" class="form-label">3. DOMICILIO FISCAL (SEÑAS)</label>
+              <input type="text" class="form-control" id="domicio1">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+              <label for="provincia" class="form-label">4. PROVINCIA</label>
+              <input type="text" class="form-control" id="provincia">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <label for="canton" class="form-label">5. N° CANTÓN</label>
+              <input type="text" class="form-control" id="canton">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <label for="distrito" class="form-label">6. DISTRITO</label>
+              <input type="text" class="form-control" id="distrito">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+              <label for="telefono" class="form-label">7. N° TELEFONO</label>
+              <input type="text" class="form-control" id="telefono">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+              <label for="fax" class="form-label">8. N° FAX</label>
+              <input type="text" class="form-control" id="fax">
+            </div>
+          </div>
+          <div class="row">
+            <label for="correoelectronico1" class="col-12 col-form-label">9. CORREO ELECTRONICO PARA
+              NOTIFICACIONES:</label>
+            <div class="col-12">
+              <input type="text" class="form-control" id="correoelectronico1">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <h4 class="text-center">EN CASO DE PERSONA JURIDICA ANOTAR DATOS DEL REPRESENTANTE LEGAL</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-5">
+              <label for="cedula2" class="form-label">10. N° CÉDULA</label>
+              <input type="text" class="form-control" id="cedula2">
+            </div>
+            <div class="col-12 col-md-6 col-lg-7">
+              <label for="nombrerazonsocial2" class="form-label">11. NOMBRE Y APELLIDOS</label>
+              <input type="text" class="form-control" id="nombrerazonsocial2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="domicio2" class="form-label">12. DOMICILIO FISCAL (SEÑAS)</label>
+              <input type="text" class="form-control" id="domicio2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+              <label for="provincia2" class="form-label">13. PROVINCIA</label>
+              <input type="text" class="form-control" id="provincia2">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <label for="canton2" class="form-label">14. CANTÓN</label>
+              <input type="text" class="form-control" id="canton2">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <label for="distrito" class="form-label">15. DISTRITO</label>
+              <input type="text" class="form-control" id="distrito">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+              <label for="telefono2" class="form-label">16. N° TELEFONO</label>
+              <input type="text" class="form-control" id="telefono2">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+              <label for="fax2" class="form-label">17. N° FAX</label>
+              <input type="text" class="form-control" id="fax2">
+            </div>
+          </div>
+          <div class="row">
+            <label for="correoelectronico1" class="col-12 col-form-label">18. CORREO ELECTRONICO PARA
+              NOTIFICACIONES:</label>
+            <div class="col-12">
+              <input type="text" class="form-control" id="correoelectronico1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-bottom p-2">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="text-center">CUADRO II. IDENTIFICACIÓN DE LA PROPIEDAD</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="cedula1" class="form-label">19. UBICACION</label>
+              <div class="row">
+                <div class="col-12 col-md-3 col-lg-4">
+                  <label for="ubicaciondistrito" class="form-label">Distrito</label>
+                  <input type="text" class="form-control" id="ubicaciondistrito">
+                </div>
+                <div class="col-12 col-md-9 col-lg-8">
+                  <label for="direccion4" class="form-label">Dirección Exacta</label>
+                  <input type="text" class="form-control" id="direccion4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="numerofinca" class="form-label">20. N° DE FINCA:</label>
+              <input type="text" class="form-control" id="numerofinca">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3 col-lg-7">
+              <label for="numeroplano" class="form-label">21.N° PLANO CATASTRO</label>
+              <input type="text" class="form-control" id="numeroplano">
+            </div>
+            <div class="col-12 col-md-9 col-lg-5">
+              <label for="areametrocuadrados" class="form-label">22. AREA (M CUADRADOS)</label>
+              <input type="text" class="form-control" id="areametrocuadrados">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <label for="" class="form-label">23. SERVICIOS PÚBLICOS QUE POSEE:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="serviciospublicos1">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Acera
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="serviciospublicos2">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Cordón y caño
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="serviciospublicos3">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Cañería
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="serviciospublicos4">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Alcantarillado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="serviciospublicos5">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Teléfono
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="serviciospublicos6">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Electricidad
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="serviciospublicos7">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Alumbrado Público
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="serviciospublicos8">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Todos los anteriores
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <label for="" class="form-label">24. VIA ACCESO PRINCIPAL</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="viaaccesoprincipal1">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Camino asfaltado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="viaaccesoprincipal2">
+                <label class="form-check-label" for="flexCheckDefault">
+                  camino de lastre
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="viaaccesoprincipal3">
+                <label class="form-check-label" for="flexCheckDefault">
+                  línea férrea
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="viaaccesoprincipal4">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Alameda
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="viaaccesoprincipal">
+                <label class="form-check-label" for="flexCheckDefault5">
+                  Camino de tierra
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="viaaccesoprincipal6">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Servidumbre
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <label for="frentepropiedad" class="form-label">25. FRENTE PROPIEDAD</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="frentepropiedad">
+                <span class="input-group-text">metros</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+              <label for="" class="form-label">26. REGULARIDAD</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="regularidad" id="regularidad1" value="1">
+                <label class="form-check-label" for="ayuda1">Si</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="regularidad" id="regularidad2" value="2">
+                <label class="form-check-label" for="ayuda2">No</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" id="regularidad1Porcentaje">
+                <span class="input-group-text">%</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="" class="form-label">27. PENDIENTE:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="pendiente1">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Plano (0 - 5%)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="pendiente2">
+                <label class="form-check-label" for="flexCheckDefault">
+                  accidentado (16 -30%)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="pendiente3">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Quebrado (45-60%)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="pendiente4">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Ondulado (5-15%)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="pendiente5">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Muy accidentado (30-45%)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="pendiente6">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Muy quebrado (más de 60%)
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="" class="form-label">28. NIVEL</label>
+              <div class="input-group">
+                <span class="input-group-text">A nivel</span>
+                <input type="text" class="form-control" id="nivel1">
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">Sobre nivel</span>
+                <input type="text" class="form-control" id="nivel2">
+                <span class="input-group-text">metros</span>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">Bajo nivel</span>
+                <input type="text" class="form-control" id="nivel3">
+                <span class="input-group-text">metros</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="" class="form-label">29.UBICACIÓN EN LA MANZANA:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ubicacionmanzana1">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Manzanero
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ubicacionmanzana2">
+                <label class="form-check-label" for="flexCheckDefault">
+                  cabecero
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ubicacionmanzana3">
+                <label class="form-check-label" for="flexCheckDefault">
+                  esquinero
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ubicacionmanzana4">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Medianero
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ubicacionmanzana5">
+                <label class="form-check-label" for="flexCheckDefault">
+                  En callejón lateral
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ubicacionmanzana6">
+                <label class="form-check-label" for="flexCheckDefault">
+                  En callejón al fondo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ubicacionmanzana7">
+                <label class="form-check-label" for="flexCheckDefault">
+                  medianero con dos frentes
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <label for="" class="form-label">30. HIDROLOGIA</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="hidrologia" value="" id="hidrologia1">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Excelente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="hidrologia" value="" id="hidrologia2">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Muy bueno
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="hidrologia" value="" id="hidrologia3">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Malo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="hidrologia" value="" id="hidrologia4">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Bueno
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="hidrologia" value="" id="hidrologia5">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Regular
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <label for="" class="form-label">31. USO DEL SUELO</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="usosuelo" value="" id="usosuelo1">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Excelente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="usosuelo" value="" id="usosuelo2">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Muy bueno
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="usosuelo" value="" id="usosuelo3">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Malo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="usosuelo" value="" id="usosuelo4">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Bueno
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="usosuelo" value="" id="usosuelo5">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Regular
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <label for="" class="form-label">32. VALOR UNITARIO DEL TERRENO</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="valormetrocuadrado">
+                <span class="input-group-text">/ Metro cuadrado</span>
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" id="valorhectarea">
+                <span class="input-group-text">/ Hectárea</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <label for="" class="form-label">33. VALOR TOTAL DEL TERRENO</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="valortotalterreno">
+                <span class="input-group-text">(casilla 22Xcasilla 32) <br>Pasar a casilla N°49</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row border-bottom p-2">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-center">CUADRO III. DESCRIPCIÓN DE CONSTRUCCIONES, INSTALACIONES Y OBRAS COMPLEMENTARIAS
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    </fieldset>
+  </form>
+</div>
+
+</html>
